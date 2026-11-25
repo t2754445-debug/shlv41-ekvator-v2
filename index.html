@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Экватор влияния · Школа личного влияния</title>
+<link rel="canonical" href="https://t2754445-debug.github.io/shlv41-ekvator-v2/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://t2754445-debug.github.io/shlv41-ekvator-v2/">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:title" content="Экватор влияния · Выпуск 2">
+<meta property="og:description" content="Найдите свою команду: истории из чата, пиксельные портреты, мультфильм «Первый гость» и десять конвертов «Золотой Люсиль».">
+<meta property="og:image" content="https://t2754445-debug.github.io/shlv41-ekvator-v2/assets/cover-ekvator-25nov.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Экватор влияния. Вова и первый гость открытого урока.">
+<link rel="stylesheet" href="equator.css">
+<link rel="stylesheet" href="affiche.css">
+<link rel="stylesheet" href="broadcast.css">
+<script defer src="programme.js"></script>
+<script defer src="flower-dialogue.js"></script>
+<script defer src="archive-data.js"></script>
+<script defer src="portraits.js"></script>
+<script defer src="wave-cues.js"></script>
+<script defer src="revision-cues.js"></script>
+<script defer src="roster.js"></script>
+<script defer src="equator.js"></script>
+<script defer src="montage.js"></script>
+<script defer src="paper-original.js"></script>
+<script defer src="cartoon-stage.js"></script>
+</head><body>
+<header class="top"><a class="brand" href="#start">ШЛВ<span>41</span></a>
+<button id="site-sound" type="button" class="sound" aria-label="Звуки и музыка" aria-pressed="true">Звук<span>●</span></button></header>
+<main id="start">
+<section class="hero" aria-labelledby="main-title">
+  <div class="theatre-valance" aria-hidden="true"></div>
+  <div id="lobby-portraits" class="lobby-portraits" aria-hidden="true"></div>
+  <div class="wrap hero-layout">
+    <div class="hero-content">
+      <p class="marquee">ШЛВ 41 / ВЫПУСК 2</p>
+      <h1 id="main-title"><span>Экватор</span><span>влияния</span></h1>
+      <p class="hero-intro">Два капитана у одной команды, спор об архетипах и открытый урок. Что обсуждал 41‑й поток.</p>
+      <div class="actions"><button type="button" class="primary" data-chapter="0" aria-label="Смотреть шоу"><span aria-hidden="true">▶</span> Смотреть</button><a href="#teams">Найти свою команду ↓</a></div>
+    </div>
+    <button class="hero-film" type="button" data-chapter="5">
+      <img src="assets/first-guest-still.jpg" width="1080" height="720" alt="">
+      <span class="hero-film-label"><span class="hero-play" aria-hidden="true">▶</span><span><strong>Первый гость</strong><small>Бумажный мультфильм · 1 мин</small></span></span>
+    </button>
+  </div>
+</section>
+
+<section class="wrap section" id="hall"><div class="section-head"><h2>Люди потока</h2><p>Нажмите на карточку, чтобы узнать историю.</p></div><div id="hall-cards" class="hall-grid"></div></section>
+
+<section class="numbers" id="numbers"><div class="wrap section"><div class="section-head"><h2>Как менялся поток</h2><p>Каким стал 41-й поток к середине школы.</p></div>
+<div class="flow-story"><div class="intro-numbers"><article><strong>4</strong><span>команды</span></article><article><strong>8</strong><span>занятий в программе</span></article><article><strong>13 947</strong><span>сообщений с 28.10 по 23.11</span></article></div>
+<div class="timeline" aria-label="Аккаунты в общем чате"><div><small>29 октября</small><b>74</b></div><i aria-hidden="true">→</i><div><small>Первый выпуск</small><b>68</b></div><i aria-hidden="true">→</i><div><small>Экватор</small><b>57</b></div></div></div>
+<section class="daily-chart" aria-labelledby="daily-title">
+  <div class="daily-heading"><div><h3 id="daily-title">Сообщения по дням</h3>
+  <p>28 октября – 23 ноября · пик 5 ноября, 1 142 сообщения</p></div>
+  <button type="button" id="replay-numbers">Повторить анимацию</button></div>
+  <div class="daily-scroll" tabindex="0" aria-label="График сообщений с 28 октября по 23 ноября"><ol id="daily-bars"></ol></div>
+</section>
+
+</div></section>
+
+<section class="wrap section" id="teams"><div class="section-head"><h2>Выступления команд</h2></div>
+<div class="tabs" id="team-tabs" aria-label="Команды"></div><div id="team-panel"></div>
+<table class="standings"><caption>Имена в командных списках</caption><thead><tr><th scope="col">Команда</th><th scope="col">Старт</th><th scope="col">Первый выпуск</th><th scope="col">Экватор</th></tr></thead><tbody id="standings"></tbody></table>
+
+</section>
+
+<section class="film" id="film">
+  <div class="wrap film-layout">
+    <figure class="film-image"><img src="assets/first-guest-still.jpg" width="1080" height="720" alt="Вова и гость сели рядом. Между ними микрофон в жёлтой кружке." loading="lazy"></figure>
+    <div class="film-details">
+      <p class="eyebrow">БУМАЖНЫЙ МУЛЬТФИЛЬМ · 1 МИН</p>
+      <h2>Первый гость</h2>
+      <p>Гость пришёл послушать открытый урок. Вова уже бежит к нему с микрофоном. Как тут завязать разговор?</p>
+      <button type="button" class="primary" data-chapter="5"><span aria-hidden="true">▶</span> Смотреть мульт</button>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="curators"><div class="section-head"><h2>Руководитель и кураторы ШЛВ</h2><p>Здесь руководитель школы и кураторы четырёх команд. Нажмите на карточку, чтобы увидеть портрет. Второе нажатие откроет его крупно.</p></div><div id="curator-cards" class="curators-grid"></div></section>
+
+<section class="awards" id="awards"><div class="wrap section"><div class="section-head"><p class="eyebrow">ЦЕРЕМОНИЯ</p><h2>Золотая Люсиль</h2><p>Откройте конверт, чтобы узнать победителя и услышать историю.</p></div><div class="ceremony-layout"><div id="award-cards" class="award-grid"></div>
+<figure class="lucille-stage"><img src="assets/award.jpg" width="1600" height="1600" alt="Золотая Люсиль на пьедестале под прожектором" loading="lazy"><div id="lucille-audience" aria-hidden="true"></div></figure></div></div></section>
+
+<section class="wrap section" id="rating"><div class="section-head"><h2>Найди себя</h2><p>Активность в Telegram с 28 октября по 18 ноября.</p></div>
+<div class="filters"><label>Имя<input id="query" type="search" placeholder="Начни вводить имя"></label><label>Команда<select id="team-filter"><option value="">Все команды</option></select></label><label>По чему считать<select id="sort-by"><option value="2">Сообщениям</option><option value="3">Реакциям</option></select></label></div>
+<table class="rating"><thead><tr><th scope="col">Участник</th><th scope="col">Сообщ.</th><th scope="col">Реакции</th></tr></thead><tbody id="rank-body"></tbody></table><p id="rank-count" aria-live="polite"></p><button type="button" id="rank-more">Показать всех</button>
+</section>
+</main>
+<nav class="mobile-nav" aria-label="Разделы выпуска">
+  <a href="#start" aria-current="location">Начало</a>
+  <a href="#teams">Команды</a>
+  <a href="#film">Мульт</a>
+  <a href="#awards">Люсиль</a>
+</nav>
+<footer class="wrap footer"><a href="#start">К началу ↑</a><a href="https://t2754445-debug.github.io/shlv41/">Первый выпуск ↗</a><a href="https://t.me/vh220">Написать Владимиру ↗</a></footer>
+
+<dialog id="player" aria-label="Плеер «Экватор влияния»">
+<div class="player-top"><span id="chapter-name"></span><button type="button" id="close-player" aria-label="Закрыть шоу">✕</button></div>
+<div id="chapter-track" aria-label="Главы шоу"></div>
+<div id="player-stage">
+<div class="broadcast-scenery" aria-hidden="true">
+  <div class="broadcast-rays"></div>
+  <div class="broadcast-band upper"><span></span></div><div class="broadcast-band lower"><span></span></div>
+  <i class="broadcast-ring"></i><i class="broadcast-star"></i><i class="broadcast-square"></i>
+</div>
+<canvas id="drawn-stage" width="900" height="510" aria-hidden="true"></canvas><div class="stage-wipe" aria-hidden="true"></div><div class="stage-curtain" aria-hidden="true"><i></i><i></i></div><div class="theatre-valance" aria-hidden="true"></div><div class="broadcast-pause" aria-hidden="true">Ⅱ ПАУЗА</div>
+<div class="stage-visual" aria-hidden="true"><div class="actors-camera"><div class="stage-host stage-pixel"><img src="assets/negan/wave.png" alt=""></div><div class="stage-host stage-paper"><canvas id="paper-actor" width="450" height="600"></canvas></div><svg class="stage-mic" viewBox="0 0 94 130" aria-label="Микрофон ШЛВ 41" role="img">
+  <defs><pattern id="grille" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 0h2v2H0zm2 2h2v2H2z" fill="#91a0b5"/></pattern></defs>
+  <path d="M35 25h22l-4 97-10 6-6-11Z" fill="#202036" stroke="#0e0d1c" stroke-width="4"/>
+  <ellipse cx="46" cy="26" rx="25" ry="23" fill="#5f687b" stroke="#131221" stroke-width="5"/>
+  <ellipse cx="46" cy="24" rx="21" ry="19" fill="url(#grille)" stroke="#c3b1a6" stroke-width="2"/>
+  <path d="M23 38h46" stroke="#252b42" stroke-width="8"/>
+  <path d="M15 47h62v47H15z" fill="#a3323d" stroke="#241829" stroke-width="4"/>
+  <path d="M15 47h62v7H15z" fill="#f37355"/>
+  <text x="46" y="70" text-anchor="middle" font-family="Rubik, sans-serif" font-size="19" font-weight="900" fill="#fff1c6">ШЛВ</text>
+  <text x="46" y="88" text-anchor="middle" font-family="Rubik, sans-serif" font-size="20" font-weight="900" fill="#fff1c6">41</text>
+  <path d="M47 104h19v8H56v12H46v-6h-8v-10h9z" fill="#d3a17b" stroke="#372635" stroke-width="2"/>
+</svg><div class="stage-floor"></div></div><div id="stage-plate" hidden></div><canvas id="romashka-cartoon" width="900" height="510" aria-label="Владимир и Эллина пробуют «Ромашку»" hidden></canvas></div>
+<video id="film-video" playsinline preload="none" controls src="first-guest.mp4" poster="assets/first-guest-vertical.jpg" hidden></video>
+</div>
+<div id="subtitles" aria-live="off"></div>
+<div class="controls"><button type="button" id="previous">← <span>Назад</span></button><button type="button" id="pause">Пауза</button><button type="button" id="next"><span>Дальше</span> →</button></div>
+</dialog>
+<dialog id="portrait-dialog" aria-labelledby="portrait-name">
+  <div class="player-top"><span id="portrait-name"></span><button type="button" id="close-portrait" aria-label="Закрыть портрет">✕</button></div>
+  <div id="portrait-preview"></div>
+</dialog>
+</body></html>
