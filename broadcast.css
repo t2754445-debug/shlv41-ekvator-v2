@@ -20,13 +20,12 @@ body {
 }
 .top,.mobile-nav { background: #0c112e; border-color: #35467a; }
 .hero { background: linear-gradient(#10092965,#160d31c9), url(assets/curtain.jpg) center / cover; }
-.hero-layout { min-height: min(660px,78svh); position: relative; padding-block: clamp(55px,8vw,115px) 70px; }
+.hero-layout { min-height: min(610px,76svh); position: relative; padding-block: clamp(66px,9vw,118px) 78px; }
 .hero .marquee { background: #141c4a; color: #ffdc75; border-radius: 20px; }
 .hero h1 span { color: #fff7e6; text-shadow: 0 .07em #141c4a; }
 .hero h1 span + span { color: var(--starlight); filter: none; text-shadow: 0 .07em #141c4a; }
-.hero .hero-intro, .hero .actions a { color: #fff7e6; }
+.hero .hero-intro { color: #fff7e6; margin-inline: auto; }
 .hero .primary { background: var(--starlight); color: var(--midnight); border-color: #ffd875; box-shadow: 0 5px #915723; }
-.hero-film { border: 2px solid var(--starlight); box-shadow: 7px 8px #0d1437; }
 .theatre-valance { position: absolute; z-index: 8; inset: 0 0 auto; height: clamp(23px,5.8svh,65px); pointer-events: none;
   background: repeating-linear-gradient(90deg,#8c1020 0 26px,#b3172a 26px 54px); border-bottom: 6px solid var(--starlight); box-shadow: 0 8px 24px #05081e86; }
 .lobby-portraits { position: absolute; inset: auto 2vw 9px; display: flex; justify-content: space-between; pointer-events: none; }
@@ -207,8 +206,32 @@ body {
 .show-meter i.filled { background: linear-gradient(90deg,#ff873e,#f5c34f); transform-origin: left; animation: meter-fill .35s ease-out calc(var(--step) * .11s) both; }
 @keyframes meter-fill { from { transform: scaleX(.05); } }
 
-@media(max-width: 700px) {
-  .hero-layout { min-height: 0; padding-block: 40px 57px; }
+@media (max-width: 700px), (max-width: 950px) and (max-height: 550px) and (orientation: landscape) {
+  #player .stage-visual {
+    container-type: size;
+    min-height: 0;
+    height: clamp(220px,min(95vw,calc(100dvh - 166px)),430px);
+  }
+  #player-stage .actors-camera { width: min(100%,95cqh); margin-inline: auto; transform-origin: 50% 64%; }
+  #player-stage .stage-pixel { left: 7%; bottom: 12%; width: 37%; }
+  #player-stage .stage-paper { right: 2%; bottom: 10%; width: 51%; }
+  #player-stage .stage-mic { left: 33%; bottom: 37%; width: 14%; }
+  #player-stage .stage-visual[data-speaker=paper] .stage-mic { left: 56%; bottom: 38%; }
+  #player-stage:is([data-shot=pixel],[data-shot=react-pixel]) .actors-camera {
+    transform: translate(19%,-3%) scale(1.29);
+  }
+  #player-stage:is([data-shot=paper],[data-shot=react-paper]) .actors-camera {
+    transform: translate(-18%,-4%) scale(1.28);
+  }
+  #player-stage[data-shot=mic] .actors-camera { transform: scale(1.23); }
+  #player-stage[data-shot=mic] .stage-mic { left: 43%; bottom: 40%; width: 19%; }
+  #player-stage[data-shot=insert] .stage-host { bottom: 5%; }
+  #player-stage .broadcast-band { font-size: clamp(12px,3.9vw,20px); }
+  #player-stage .theatre-valance { height: 25px; border-bottom-width: 4px; }
+}
+
+@media (max-width: 700px) {
+  .hero-layout { min-height: 0; padding-block: clamp(61px,13vw,90px) 72px; }
   .team-feature,.ceremony-layout { grid-template-columns: minmax(0,1fr); }
   .lucille-stage { grid-row: 1; width: min(100%,440px); aspect-ratio: 4/5; justify-self: center; }
   .intro-numbers { gap: 5px; }
